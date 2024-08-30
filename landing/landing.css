@@ -1,0 +1,367 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+/* Header styling */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #2C3E50; /* Deep Navy Blue */
+    color: #ECF0F1; /* Light Gray */
+}
+
+header nav h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ECF0F1; /* Light Gray */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styling */
+.hero {
+    background: url('hero-bg.jpeg') no-repeat center center/cover; /* Background image */
+    color: #fff; /* White */
+    text-align: center;
+    padding: 6em 1em;
+    margin-bottom: 2em;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.hero button {
+    background-color: #34495E; /* Slightly lighter Navy Blue */
+    color: #fff; /* White */
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #2C3E50; /* Deep Navy Blue */
+}
+
+/* About section styling */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure even spacing between text and image */
+    padding: 3em 1em;
+    background-color: #f5f5f5; /* Light grey background for contrast */
+}
+
+.about-content .text {
+    flex: 1;
+    padding-right: 2em;
+    color: #2C3E50; /* Deep Navy Blue for a professional look */
+}
+
+.about-content .text h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #34495E; /* Slightly lighter shade for the heading */
+}
+
+.about-content .text h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #2C3E50;
+    line-height: 1.6;
+}
+
+.about-content .text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+    color: #7F8C8D; /* Grayish color for readability */
+}
+
+.about-content .image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-content .image img {
+    max-width: 90%; /* Slight margin around the image */
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-content .image img:hover {
+    transform: scale(1.05); /* Slight zoom on hover for a dynamic effect */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        padding: 2em 0.5em; /* Reduced padding */
+    }
+
+    .about-content .text {
+        padding-right: 0; /* Remove padding on mobile */
+        text-align: center; /* Center align text on mobile */
+    }
+
+    .about-content .text h2 {
+        font-size: 2em; /* Smaller font size for headings */
+    }
+
+    .about-content .text h3 {
+        font-size: 1.3em; /* Smaller font size for subheading */
+    }
+
+    .about-content .text p {
+        font-size: 1em; /* Smaller font size for paragraphs */
+    }
+
+    .about-content .image {
+        margin-top: 1em; /* Add margin above the image */
+    }
+
+    .about-content .image img {
+        max-width: 100%; /* Full width on mobile */
+    }
+}
+
+
+
+/* Features section styling */
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2em 0;
+    background-color: #f9f9f9;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.feature h3 {
+    margin-bottom: 1em;
+    color: #007BFF;
+}
+
+/* About Us section styling */
+/* .about {
+    padding: 3em 1em;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 2em;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 1.5em;
+    color: #555;
+}
+
+.about p strong {
+    color: #007BFF;
+    font-weight: bold;
+} */
+
+/* Services section styling */
+.services {
+    padding: 3em 1em;
+    background-color: #f5f0e6;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #e0e0e0;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    margin-bottom: 1em;
+    color: #007BFF;
+}
+
+/* Contact Us section styling */
+.contact {
+    padding: 3em 1em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.contact p {
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    margin-top: 2em;
+}
+
+
+@media (max-width: 768px) {
+    /* Header */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 3em 1em; /* Adjust padding for mobile */
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Smaller font size */
+    }
+
+    .hero p {
+        font-size: 1em; /* Smaller font size */
+    }
+
+    /* Features Section */
+    .features {
+        flex-direction: column; /* Stack features vertically */
+        padding: 1em; /* Adjust padding */
+    }
+
+    .feature {
+        margin: 0.5em 2em; /* Adjust margin for stacking */
+        min-width: 250px; /* Remove min width for better stacking */
+    }
+
+    /* Services Section */
+    .service-cards {
+        flex-direction: column; /* Stack service cards vertically */
+        padding: 2em; /* Adjust padding */
+    }
+
+    .service-card {
+        margin: 0.7em 2em 1em 0em; /* Adjust margin for stacking */
+        min-width: 220px; /* Remove min width for better stacking */
+    }
+
+ }
